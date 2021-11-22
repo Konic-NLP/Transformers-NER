@@ -145,7 +145,7 @@ def train_model():
 
 def predict():
     # define id to lable
-    label2id = {0: 'O', 1: 'B', 2: 'I'}
+    label2id = {0: 'O', 1: 'B', 2: 'I', 3: '<START>', 4: '<END>'}
 
     # define and load model
     model = select_model(args).to(args.device)
