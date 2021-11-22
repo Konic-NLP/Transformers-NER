@@ -98,7 +98,7 @@ def test_epoch(model, dataloader, epoch):
     
     # update experiments
     with experiment.test():
-        experiment.log_metrics(metric)
+        experiment.log_metrics(metric, step=epoch)
     
     return metric
 
