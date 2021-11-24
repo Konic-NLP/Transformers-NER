@@ -15,6 +15,7 @@ from utils.utils import select_model, save_checkpoint
 
 # global setting
 experiment = Experiment(project_name=args.comet_name, api_key=args.comet_key, disabled=(not args.comet_ml))
+experiment.set_name(args.ex_name)
 experiment.log_parameters(vars(args))
 running_name = datetime.today().strftime('%Y-%m-%d-%H:%M:%S')
 logger = init_logger(os.path.join(args.log_dir, running_name+'.log'))
@@ -122,7 +123,8 @@ def train_model():
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=args.scheduler_step, gamma=0.8, last_epoch=-1, verbose=False)
 
     # training
-    best_loss = 1e16
+    # best_loss = 1e16
+    best_f1 = 0
     for epoch in range(args.epochs):
         train_metric = train_epoch(model, optimizer, train_loader, epoch)
         test_metric = test_epoch(model, dev_loader, epoch)
@@ -139,8 +141,10 @@ def train_model():
         ))
         logger.info('\n')
 
-        if test_metric['loss'] < best_loss:
-            best_loss = test_metric['loss']
+        # if test_metric['loss'] < best_loss:
+        if test_metric['f1'] > best_f1:
+            # best_loss = test_metric['loss']
+            best_f1 = test_metric['f1']
             save_checkpoint(model, optimizer, args)
 
 def predict():
@@ -149,7 +153,9 @@ def predict():
 
     # define and load model
     model = select_model(args).to(args.device)
-    state_dict = torch.load(os.path.join(args.save_dir, f'{args.model_name}.pt'), map_location=torch.device(args.device))
+    suffix = args.transformer_name.replace('/', '_') if args.model_name.startswith('Transformer') else ''
+    name = os.path.join(args.save_dir, f'{args.model_name}_{suffix}.pt')
+    state_dict = torch.load(name, map_location=torch.device(args.device))
     model.load_state_dict(state_dict['model'])
 
     dev_data = torch.load(args.dev_data)

@@ -11,6 +11,7 @@ parser.add_argument('--predict', action='store_true', help='predicting progress'
 parser.add_argument('--comet_ml', action='store_true', help='indicate if use comet ml')
 parser.add_argument('--comet_key', type=str, default='JXqjTyjl3HyEnlLnosq7FUgH1', help='API key for Sen\'s comet account')
 parser.add_argument('--comet_name', type=str, default='BoulderNLPCourse', help='repo name in comet ml')
+parser.add_argument('--ex_name', type=str, default='', help='experiment name in comet ml')
 
 # parameters about data
 parser.add_argument('--raw_file', type=str, default='data/S21-gene-train.txt', help='path to the raw data file')
