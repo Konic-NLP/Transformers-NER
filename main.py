@@ -158,6 +158,24 @@ def predict():
     state_dict = torch.load(name, map_location=torch.device(args.device))
     model.load_state_dict(state_dict['model'])
 
+    # load the predict data
+    dev_data = NERDataset(args, mode='dev')
+    dev_loader = torch.utils.data.DataLoader(dev_data, batch_size=args.batch_size, collate_fn=collate_fn)
+    predicts = []
+
+    with torch.no_grad():
+        for batch in tqdm(dev_loader):
+            out, mask = model(batch, mode='dev', return_predict=True)
+            predict = model.predict(out, mask, batch['sents'])
+            predicts += predict
+
+    with open('data/predict.txt', 'w') as f:
+        for i in range(len(predicts)):
+            sent = dev_data[i]
+            for j, s in enumerate(sent.split()):
+                f.write('\t'.join([str(j+1), s, label2id[predicts[i][j]]]) + '\n')
+            f.write('\n')
+
     dev_data = torch.load(args.dev_data)
     dev_loader = torch.utils.data.DataLoader(dev_data, batch_size=args.batch_size, collate_fn=collate_fn)
     predicts = []
@@ -172,16 +190,16 @@ def predict():
         for i in range(len(predicts)):
             sent = dev_data[i][0]
             for j, s in enumerate(sent.split()):
-                f.write('\t'.join([str(j), s, label2id[predicts[i][j]]]) + '\n')
+                f.write('\t'.join([str(j+1), s, label2id[predicts[i][j]]]) + '\n')
             f.write('\n')
 
     with open('data/truth_result.txt', 'w') as f:
         for i in range(len(dev_data)):
             sent = dev_data[i][0]
             for j, s in enumerate(sent.split()):
-                f.write('\t'.join([str(j), s, label2id[dev_data[i][-1][j]]]) + '\n')
+                f.write('\t'.join([str(j+1), s, label2id[dev_data[i][-1][j]]]) + '\n')
             f.write('\n')
-    
+
     os.system('python eval.py data/truth_result.txt data/predict_result.txt')
 
 if __name__ == '__main__':

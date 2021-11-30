@@ -15,6 +15,7 @@ parser.add_argument('--ex_name', type=str, default='', help='experiment name in 
 
 # parameters about data
 parser.add_argument('--raw_file', type=str, default='data/S21-gene-train.txt', help='path to the raw data file')
+parser.add_argument('--predict_file', type=str, default='data/F21-gene-test.txt', help='path to the raw data file for prediction')
 parser.add_argument('--dataset', type=str, default='data/dataset.pt', help='path to the processed dataset')
 parser.add_argument('--train_data', type=str, default='data/train_data.pt', help='path to the processed train dataset')
 parser.add_argument('--dev_data', type=str, default='data/dev_data.pt', help='path to the processed dev dataset')

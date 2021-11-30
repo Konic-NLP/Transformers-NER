@@ -1,0 +1,70 @@
+2021-11-30 06:02:01,172 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:02:01,172 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   0 Train Result
+2021-11-30 06:02:01,172 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 6.71 | Accuracy: 0.96 | F1: 0.61 | Precision: 0.62 | Recall: 0.62
+2021-11-30 06:02:01,172 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   0 Test Result
+2021-11-30 06:02:01,172 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 3.19 | Accuracy: 0.98 | F1: 0.79 | Precision: 0.78 | Recall: 0.81
+2021-11-30 06:02:01,173 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:04:13,800 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:04:13,801 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   1 Train Result
+2021-11-30 06:04:13,801 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 2.47 | Accuracy: 0.98 | F1: 0.81 | Precision: 0.81 | Recall: 0.82
+2021-11-30 06:04:13,802 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   1 Test Result
+2021-11-30 06:04:13,802 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 2.71 | Accuracy: 0.98 | F1: 0.82 | Precision: 0.82 | Recall: 0.83
+2021-11-30 06:04:13,802 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:06:28,133 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:06:28,133 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   2 Train Result
+2021-11-30 06:06:28,134 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 1.66 | Accuracy: 0.99 | F1: 0.86 | Precision: 0.86 | Recall: 0.87
+2021-11-30 06:06:28,134 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   2 Test Result
+2021-11-30 06:06:28,134 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 2.71 | Accuracy: 0.98 | F1: 0.83 | Precision: 0.82 | Recall: 0.84
+2021-11-30 06:06:28,134 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:08:45,991 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:08:45,992 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   3 Train Result
+2021-11-30 06:08:45,993 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 1.21 | Accuracy: 0.99 | F1: 0.89 | Precision: 0.89 | Recall: 0.89
+2021-11-30 06:08:45,993 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   3 Test Result
+2021-11-30 06:08:45,993 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 2.62 | Accuracy: 0.98 | F1: 0.84 | Precision: 0.83 | Recall: 0.84
+2021-11-30 06:08:45,993 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:10:59,874 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:10:59,874 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   4 Train Result
+2021-11-30 06:10:59,875 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 0.91 | Accuracy: 0.99 | F1: 0.91 | Precision: 0.91 | Recall: 0.91
+2021-11-30 06:10:59,875 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   4 Test Result
+2021-11-30 06:10:59,876 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 2.87 | Accuracy: 0.98 | F1: 0.84 | Precision: 0.84 | Recall: 0.84
+2021-11-30 06:10:59,876 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:17:37,048 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:17:37,049 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   5 Train Result
+2021-11-30 06:17:37,049 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 0.71 | Accuracy: 0.99 | F1: 0.93 | Precision: 0.92 | Recall: 0.93
+2021-11-30 06:17:37,049 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   5 Test Result
+2021-11-30 06:17:37,049 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 3.02 | Accuracy: 0.98 | F1: 0.84 | Precision: 0.83 | Recall: 0.85
+2021-11-30 06:17:37,049 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:19:50,826 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:19:50,827 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   6 Train Result
+2021-11-30 06:19:50,827 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 0.59 | Accuracy: 0.99 | F1: 0.94 | Precision: 0.93 | Recall: 0.94
+2021-11-30 06:19:50,828 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   6 Test Result
+2021-11-30 06:19:50,828 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 3.00 | Accuracy: 0.98 | F1: 0.85 | Precision: 0.85 | Recall: 0.85
+2021-11-30 06:19:50,828 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:22:42,465 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:22:42,466 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   7 Train Result
+2021-11-30 06:22:42,466 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 0.47 | Accuracy: 1.00 | F1: 0.95 | Precision: 0.94 | Recall: 0.95
+2021-11-30 06:22:42,466 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   7 Test Result
+2021-11-30 06:22:42,466 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 3.16 | Accuracy: 0.98 | F1: 0.84 | Precision: 0.84 | Recall: 0.84
+2021-11-30 06:22:42,466 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:24:52,125 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:24:52,126 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   8 Train Result
+2021-11-30 06:24:52,126 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 0.34 | Accuracy: 1.00 | F1: 0.96 | Precision: 0.96 | Recall: 0.96
+2021-11-30 06:24:52,126 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   8 Test Result
+2021-11-30 06:24:52,127 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 3.31 | Accuracy: 0.98 | F1: 0.84 | Precision: 0.84 | Recall: 0.84
+2021-11-30 06:24:52,127 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+
+2021-11-30 06:27:01,731 - /data/yansen/BoulderNLPAssignment3/main.py[line:133] - INFO: ===========================================================================
+2021-11-30 06:27:01,732 - /data/yansen/BoulderNLPAssignment3/main.py[line:134] - INFO: Epoch:   9 Train Result
+2021-11-30 06:27:01,733 - /data/yansen/BoulderNLPAssignment3/main.py[line:135] - INFO: Loss: 0.28 | Accuracy: 1.00 | F1: 0.97 | Precision: 0.97 | Recall: 0.97
+2021-11-30 06:27:01,733 - /data/yansen/BoulderNLPAssignment3/main.py[line:138] - INFO: Epoch:   9 Test Result
+2021-11-30 06:27:01,733 - /data/yansen/BoulderNLPAssignment3/main.py[line:139] - INFO: Loss: 3.34 | Accuracy: 0.98 | F1: 0.84 | Precision: 0.84 | Recall: 0.84
+2021-11-30 06:27:01,733 - /data/yansen/BoulderNLPAssignment3/main.py[line:142] - INFO: 
+

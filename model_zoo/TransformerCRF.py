@@ -32,9 +32,9 @@ class TransformerCRF(BaseModel):
                 return_item += (sents['attention_mask'], labels)
             return return_item
         else:
-            sents, labels = self.preprocess_input(batch, train=False)
+            sents = self.preprocess_input(batch, train=False)
             out = self.transformer(**sents)[0]
             out = self.dropout(out)
             out = self.fc(out)
-            return out
+            return out, sents['attention_mask']
     
