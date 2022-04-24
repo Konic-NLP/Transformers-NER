@@ -13,7 +13,6 @@ class BaseModel(nn.Module):
 
         # compute accuracy
         for _, (p, l) in enumerate(zip(pred, label)):
-            l = l[:len(p)]
             acc.append((torch.tensor(p)==torch.tensor(l)).sum().item()/torch.tensor(l).shape[0])
 
         # compute the f1
@@ -121,6 +120,8 @@ class BaseModel(nn.Module):
         for span in spans:
             if span[0] < len(text_label) - 1:
                 labels.append(text_labels[span[0]])
+            else:
+                labels.append(100)
 
         return labels
 

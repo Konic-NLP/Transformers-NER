@@ -1,0 +1,21 @@
+2022-04-23 20:33:51,109 - main.py[line:133] - INFO: ===========================================================================
+2022-04-23 20:33:51,109 - main.py[line:134] - INFO: Epoch:   0 Train Result
+2022-04-23 20:33:51,109 - main.py[line:135] - INFO: Loss: 4.77 | Accuracy: 0.93 | F1: 0.81 | Precision: 0.83 | Recall: 0.79
+2022-04-23 20:33:51,109 - main.py[line:138] - INFO: Epoch:   0 Test Result
+2022-04-23 20:33:51,109 - main.py[line:139] - INFO: Loss: 2.93 | Accuracy: 0.95 | F1: 0.87 | Precision: 0.83 | Recall: 0.91
+2022-04-23 20:33:51,109 - main.py[line:142] - INFO: 
+
+2022-04-23 20:35:03,654 - main.py[line:133] - INFO: ===========================================================================
+2022-04-23 20:35:03,654 - main.py[line:134] - INFO: Epoch:   1 Train Result
+2022-04-23 20:35:03,654 - main.py[line:135] - INFO: Loss: 2.31 | Accuracy: 0.96 | F1: 0.88 | Precision: 0.90 | Recall: 0.88
+2022-04-23 20:35:03,654 - main.py[line:138] - INFO: Epoch:   1 Test Result
+2022-04-23 20:35:03,654 - main.py[line:139] - INFO: Loss: 2.38 | Accuracy: 0.96 | F1: 0.88 | Precision: 0.84 | Recall: 0.93
+2022-04-23 20:35:03,654 - main.py[line:142] - INFO: 
+
+2022-04-23 20:36:16,160 - main.py[line:133] - INFO: ===========================================================================
+2022-04-23 20:36:16,160 - main.py[line:134] - INFO: Epoch:   2 Train Result
+2022-04-23 20:36:16,160 - main.py[line:135] - INFO: Loss: 1.64 | Accuracy: 0.96 | F1: 0.90 | Precision: 0.91 | Recall: 0.90
+2022-04-23 20:36:16,160 - main.py[line:138] - INFO: Epoch:   2 Test Result
+2022-04-23 20:36:16,160 - main.py[line:139] - INFO: Loss: 2.04 | Accuracy: 0.96 | F1: 0.88 | Precision: 0.87 | Recall: 0.91
+2022-04-23 20:36:16,160 - main.py[line:142] - INFO: 
+
