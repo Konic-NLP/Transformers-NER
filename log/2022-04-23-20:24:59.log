@@ -1,0 +1,28 @@
+2022-04-23 20:26:20,064 - main.py[line:133] - INFO: ===========================================================================
+2022-04-23 20:26:20,065 - main.py[line:134] - INFO: Epoch:   0 Train Result
+2022-04-23 20:26:20,065 - main.py[line:135] - INFO: Loss: 4.67 | Accuracy: 0.93 | F1: 0.81 | Precision: 0.83 | Recall: 0.79
+2022-04-23 20:26:20,065 - main.py[line:138] - INFO: Epoch:   0 Test Result
+2022-04-23 20:26:20,065 - main.py[line:139] - INFO: Loss: 2.91 | Accuracy: 0.95 | F1: 0.87 | Precision: 0.83 | Recall: 0.92
+2022-04-23 20:26:20,065 - main.py[line:142] - INFO: 
+
+2022-04-23 20:27:32,537 - main.py[line:133] - INFO: ===========================================================================
+2022-04-23 20:27:32,537 - main.py[line:134] - INFO: Epoch:   1 Train Result
+2022-04-23 20:27:32,537 - main.py[line:135] - INFO: Loss: 2.28 | Accuracy: 0.96 | F1: 0.88 | Precision: 0.90 | Recall: 0.87
+2022-04-23 20:27:32,537 - main.py[line:138] - INFO: Epoch:   1 Test Result
+2022-04-23 20:27:32,537 - main.py[line:139] - INFO: Loss: 2.26 | Accuracy: 0.96 | F1: 0.88 | Precision: 0.85 | Recall: 0.91
+2022-04-23 20:27:32,537 - main.py[line:142] - INFO: 
+
+2022-04-23 20:28:45,618 - main.py[line:133] - INFO: ===========================================================================
+2022-04-23 20:28:45,618 - main.py[line:134] - INFO: Epoch:   2 Train Result
+2022-04-23 20:28:45,618 - main.py[line:135] - INFO: Loss: 1.57 | Accuracy: 0.97 | F1: 0.91 | Precision: 0.92 | Recall: 0.90
+2022-04-23 20:28:45,618 - main.py[line:138] - INFO: Epoch:   2 Test Result
+2022-04-23 20:28:45,618 - main.py[line:139] - INFO: Loss: 2.02 | Accuracy: 0.96 | F1: 0.89 | Precision: 0.87 | Recall: 0.91
+2022-04-23 20:28:45,618 - main.py[line:142] - INFO: 
+
+2022-04-23 20:29:58,825 - main.py[line:133] - INFO: ===========================================================================
+2022-04-23 20:29:58,825 - main.py[line:134] - INFO: Epoch:   3 Train Result
+2022-04-23 20:29:58,825 - main.py[line:135] - INFO: Loss: 1.17 | Accuracy: 0.97 | F1: 0.92 | Precision: 0.93 | Recall: 0.92
+2022-04-23 20:29:58,825 - main.py[line:138] - INFO: Epoch:   3 Test Result
+2022-04-23 20:29:58,825 - main.py[line:139] - INFO: Loss: 1.95 | Accuracy: 0.96 | F1: 0.89 | Precision: 0.89 | Recall: 0.89
+2022-04-23 20:29:58,825 - main.py[line:142] - INFO: 
+

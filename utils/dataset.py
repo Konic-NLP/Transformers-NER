@@ -14,6 +14,7 @@ def collate_fn(data):
 class NERDataset(Dataset):
     def __init__(self, args, mode='train'):
         # self.label2id = {'O': 1, 'B': 2, 'I': 3} # think more, what is padding idx
+        # step 1: change here
         self.label2id = {'O': 0, 'B': 1, 'I': 2} # think more, what is padding idx
         raw_file = args.raw_file if mode == 'train' else args.predict_file
         self.mode = mode
@@ -30,7 +31,7 @@ class NERDataset(Dataset):
 
     def process_raw_data(self, raw_file, mode):
         # extracting data from raw file
-        with open(raw_file, 'r', encoding='utf-8') as f:
+        with open(raw_file, 'r', encoding='utf-8-sig') as f:
             lines = f.readlines()
         
         texts, labels = [], []
@@ -38,7 +39,7 @@ class NERDataset(Dataset):
         for line in lines:
             line = line.strip()
             if len(line) != 0:
-                cache.append(line.split('\t')[1:])
+                cache.append(line.split('\t'))
             else:
                 texts.append(' '.join([c[0] for c in cache]))
                 if mode == 'train':

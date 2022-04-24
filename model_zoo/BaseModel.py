@@ -12,7 +12,8 @@ class BaseModel(nn.Module):
         acc = []
 
         # compute accuracy
-        for idx, (p, l) in enumerate(zip(pred, label)):
+        for _, (p, l) in enumerate(zip(pred, label)):
+            l = l[:len(p)]
             acc.append((torch.tensor(p)==torch.tensor(l)).sum().item()/torch.tensor(l).shape[0])
 
         # compute the f1
@@ -62,6 +63,7 @@ class BaseModel(nn.Module):
         return entities
 
     def preprocess_input(self, batch, train=False):
+        # step 2: change 4 to num + 2
         sents = self.tokenizer(batch['sents'], max_length=512, padding='longest', truncation=True, return_tensors='pt').to(self.device)
 
         if train:
@@ -70,7 +72,7 @@ class BaseModel(nn.Module):
             labels = []
             for i in range(len(batch['labels'])):
                 line = self.convert_labels(batch['sents'][i].split(), batch['labels'][i])
-                if len(line) > sent_len:
+                if len(line) >= sent_len:
                     label = line[:sent_len - 1] + [4]
                 else:
                     label = line + [4] + [-1] * (sent_len - 1 - len(line))
@@ -93,6 +95,7 @@ class BaseModel(nn.Module):
         return predicts
     
     def convert_labels(self, sentence, text_labels):
+        # step 2: change 4 to num + 1
         labels = []
 
         for word, label in zip(sentence, text_labels):
@@ -116,7 +119,8 @@ class BaseModel(nn.Module):
         
         labels = []
         for span in spans:
-            labels.append(text_labels[span[0]])
+            if span[0] < len(text_label) - 1:
+                labels.append(text_labels[span[0]])
 
         return labels
 
